@@ -23,6 +23,35 @@
           rel="stylesheet">
     <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Fruktur&family=Heebo&family=Nunito:ital,wght@1,200&family=Oswald&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <script>
+        function closeSignIn() {
+            document.getElementById('SignIn').style.display = 'none';
+            document.getElementById('LogIn').style.display = 'none';
+        }
+
+        function closeLogIn() {
+            document.getElementById('LogIn').style.display = 'none';
+            document.getElementById('SignIn').style.display = 'none';
+        }
+
+        function showLogIn(){
+            document.getElementById('LogIn').style.display = 'block';
+            document.getElementById('SignIn').style.display = 'none';
+        }
+
+        function showSignIn(){
+            document.getElementById('SignIn').style.display = 'block';
+            document.getElementById('LogIn').style.display = 'none';
+        }
+
+        function validValue(){
+            let p1 = document.getElementsByClassName("user_password");
+            let p2 = document.getElementsByClassName("user_password2");
+            if(p1!=p2){
+                return alert("Пороли не совпадают!")
+            }
+        }
+    </script>
 </head>
 <body>
 
