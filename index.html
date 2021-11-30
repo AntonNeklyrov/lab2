@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Varela+Round|Open+Sans:400,300,600' rel='stylesheet'
           type='text/css'>
-    <script src="script.js"></script>
+    <script src="js.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -29,12 +29,10 @@
 <header>
     <button onclick="document.location='#main'" class="headerButton" id="mainButton">FilmReview</button>
     <button onclick="document.location='#SignIn',showSignIn()" class="headerButton" id="SignInButton">Войти</button>
-    <button onclick="document.location='#LogIn',showLogIn()" class="headerButton" id="LogInButton">Зарегистрироваться
-    </button>
+    <button onclick="document.location='#LogIn',showLogIn()" class="headerButton" id="LogInButton">Зарегистрироваться</button>
 </header>
 
-<div id="popup-fade">
-    <form name="Sign_in" id="SignIn" class="popup">
+    <form name="Sign_in" id="SignIn" >
         <label class="input">Вход</label>
         <input type="button" alt="" class="closeButton" value="Закрыть" onclick="closeSignIn()">
         <input type="text" name="user_login" placeholder="Логин" class="input" required>
@@ -43,7 +41,7 @@
         <button onclick="document.location='#LogIn',showLogIn()" class="input">Регистрация</button>
     </form>
 
-    <form name="Log_in" id="LogIn" class="popup" onsubmit="return validValue()">
+    <form name="Log_in" id="LogIn"  onsubmit="return validValue()">
         <label class="input">Регистрация</label>
         <input type="button" alt="" class="closeButton" id="CloseButtonLogIn" value="Закрыть" onclick="closeLogIn()">
         <input type="text" class="input" name="user_name" placeholder="Имя" required pattern="^[А-Яа-яЁё\s\-]+$">
@@ -58,7 +56,6 @@
         <input type="submit" class="input" name="login" value="Зарегистрироваться" class="input">
         <button onclick="document.location='#SignIn',showSignIn()" class="input">Вход</button>
     </form>
-</div>
 
 
 <main role="main">

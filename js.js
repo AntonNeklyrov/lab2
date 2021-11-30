@@ -1,21 +1,21 @@
 function closeSignIn() {
     document.getElementById('SignIn').style.display = 'none';
-    document.getElementById('popup-fade').style.display = 'none';
+    document.getElementById('LogIn').style.display = 'none';
 }
 
 function closeLogIn() {
     document.getElementById('LogIn').style.display = 'none';
-    document.getElementById('popup-fade').style.display = 'none';
+    document.getElementById('SignIn').style.display = 'none';
 }
 
 function showLogIn(){
     document.getElementById('LogIn').style.display = 'block';
-    document.getElementById('popup-fade').style.display = 'block'
+    document.getElementById('SignIn').style.display = 'none';
 }
 
 function showSignIn(){
     document.getElementById('SignIn').style.display = 'block';
-    document.getElementById('popup-fade').style.display = 'block'
+    document.getElementById('LogIn').style.display = 'none';
 }
 
 function validValue(){
